@@ -1,0 +1,30 @@
+body {
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-image: url(https://vogazeta.ru/uploads/full_size_1588226550-4ab55135eded16b40d2064ccb3d266fd.jpg);
+    background-size: 100%
+}
+* {
+    line-height: 40px;
+}
+input {
+    border: 5px black;
+    border-radius: 35px;
+}
+button {
+    border: 2px black;
+    border-radius: 30px;
+    color: black;
+    width: 100px;
+}
+.fon {
+    background-color: gray;
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    z-index: -1;
+    left: 32%;
+    bottom: 40%;
+    opacity: 0.7;
+}
