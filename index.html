@@ -18,21 +18,23 @@
         <div class="form">
             <form>
                 <label for="surname">Фамилия</label>
-                <input type="text" id="surname"></label>
+                <input type="text" id="surname" v-model="Surname" v-on:input="surname"></label>
                 <label for="name">Имя</label>
-                <input type="text" id="name">
+                <input type="text" id="name" v-model="Name" v-on:input="name">
             </form>
-            <p>Количество знаков: </p>
-            <button type="button">Записать</button>
+            <p>Количество знаков: {{ count }}</p>
+            <button type="button" v-on:click="newStudent" v-bind:class="{ active: filled}">Записать</button>
         </div>
         <h2>Список</h2>
-        <p>Список пуст</p>
+        <p v-if="clear">Список пуст</p>
         <div>
             <ul>
-                <li></li>
+                <li v-for="student in students">{{ student }}<hr></li>
             </ul>
         </div>
     </div>
     <div class="fon"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+    <script src="main.js"></script>
 </body>
 </html>

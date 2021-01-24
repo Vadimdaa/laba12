@@ -21,10 +21,17 @@ button {
 .fon {
     background-color: gray;
     width: 700px;
-    height: 800px;
+    height: 1600px;
     position: absolute;
     z-index: -1;
     left: 32%;
-    bottom: 40%;
+    bottom: 13%;
     opacity: 0.7;
+}
+hr {
+    width: 35%;
+    color: bisque;
+}
+ul {
+    list-style:none;
 }
