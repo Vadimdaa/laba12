@@ -5,7 +5,6 @@ const Students = {
             Surname: '',
             Name: '',
             students: [],
-            clear: true,
             filled: false
         }
     },
@@ -30,7 +29,6 @@ const Students = {
                 this.Surname=''
                 this.Name=''
                 this.count=0
-                this.clear=false
                 this.filled=false
             }
         }
